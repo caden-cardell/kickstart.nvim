@@ -1,0 +1,46 @@
+Paging:        
+    ctrl + b    - page up
+    ctrl + f    - page down
+
+Motions:
+    h,j,k,l     - left, down, up, right
+    w           - hop forward by word
+    b           - hop backward by word
+
+Number Examples:
+    8k          - go up 8 lines
+    5w          - go forward 5 words
+                NOTE: add relative line numbers ':set rnu'
+
+Commands:
+    d           - delete character under cursor
+    dd          - delete current line (deleting and yanking go to the same buffer)
+    u           - undo  
+    ctrl + r    - redo
+
+Command Motions Examples:
+    d8j         - delete down 8 lines
+    d2w         - delete 2 words
+
+Insert:
+    i           - enter insert mode, start typing on the left side of the cursor
+    a           - enter insert mode, start typing on the right side of the cursor
+    ctrl + [    - leave insert mode (equivalent to ESC)
+
+Visual:
+    v           - enter visual mode
+    shift + v   - enter visual line mode
+    y           - yank
+    yy          - yank line
+    p           - paste
+
+Visual Motions Examples:
+    Use motions to highlight text then yank, delete, etc?
+    y3j         - yanks down 3 lines
+
+File Navigation:
+    :e {path}   - open new file buffer
+    space       - nvim menu?
+    g           - goto menu?
+    grd         - goto definition
+    gcj         - toggle comment?
