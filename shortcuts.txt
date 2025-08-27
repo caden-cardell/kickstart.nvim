@@ -44,3 +44,4 @@ File Navigation:
     g           - goto menu?
     grd         - goto definition
     gcj         - toggle comment?
+    # Jump list: <C-o> back, <C-i> forward. Works after LSP gd, gf, searches, etc.
