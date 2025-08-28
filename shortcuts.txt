@@ -26,6 +26,8 @@ Insert:
     i           - enter insert mode, start typing on the left side of the cursor
     a           - enter insert mode, start typing on the right side of the cursor
     ctrl + [    - leave insert mode (equivalent to ESC)
+    ctrl + o 
+        hjkl    - temp navigate out of insert mode
 
 Visual:
     v           - enter visual mode
@@ -41,7 +43,28 @@ Visual Motions Examples:
 File Navigation:
     :e {path}   - open new file buffer
     space       - nvim menu?
+        sf      - search files
+        /       - fuzzy search
+        space   - search open buffer names
+        sg      - search grep (search for things in files)
+        sw      - search the current word
+
     g           - goto menu?
     grd         - goto definition
     gcj         - toggle comment?
-    # Jump list: <C-o> back, <C-i> forward. Works after LSP gd, gf, searches, etc.
+    ctrl + o    - jump back (works after LSP gd, gf, searches, etc.)
+    ctrl + i    - jump forward (works after LSP gd, gf, searches, etc.)
+
+Telescope picker:
+    ctrl + n    - down
+    ctrl + p    - up
+
+    ctrl + d    - scroll up in preview pane
+    ctrl + u    - scroll down in preview pane
+
+Temporarily drop to your shell
+    Ctrl-z → you’re back at the shell; run whatever.
+    fg → return to Neovim.
+
+
+    
